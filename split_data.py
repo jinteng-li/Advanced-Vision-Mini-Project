@@ -23,6 +23,8 @@ for dir in train_list:
     source_train_dir = os.path.join(train_data_path, dir)
     target_val_dir = os.path.join(val_data_path, dir)
     images = os.listdir(source_train_dir)
+    
+    # avoid multiple split of the training set
     if len(os.listdir(target_val_dir)) == num_val:
         continue
 
