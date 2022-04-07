@@ -2,10 +2,8 @@ import os
 import shutil
 
 cur_dir = os.getcwd()
-print(cur_dir)
 train_data_path = os.path.join(cur_dir, "data", "train")
 val_data_path = os.path.join(cur_dir, "data", "val")
-print(val_data_path)
 num_val = 10
 
 train_list = os.listdir(train_data_path)
